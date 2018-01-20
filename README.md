@@ -9,7 +9,7 @@ Curso desarrollo de aplicaciones con Angular y Angular CLI, el curso va desde 0.
 
 Si quieres recibir actualizaciónes y novedades sobre el curso de Angular, da clic en "Watch" en la parte superior derecha.-
 
-![Suscribirse al curso de Angular](http://codeando.org/img/github.png)
+![Suscribirse al curso de Angular](http://blog.codeando.org/img/github.png)
 
 ## Ejemplos del curso
 
