@@ -1,0 +1,49 @@
+.container
+{
+	display: grid;
+	grid-template-columns: 50% auto;
+}
+.col
+{
+	padding: 0.5em 1em;
+}
+.title
+{
+	background-color: #2277ff;
+	color: #fcfcfc;
+	font-size: 1.2em;
+	text-align: center;
+}
+.content
+{
+	background-color: #4499ff;
+	color: #fcfcfc;
+	padding: 2em 0;
+}
+.content input[type="text"]
+{
+	border: 0;
+	margin-bottom: 1em;
+	padding: 0.8em;
+	width: 80%;
+}
+.content input[type="submit"]
+{
+	background-color: #00ff3b;
+	border: 0;
+	cursor: pointer;
+	margin-bottom: 1em;
+	padding: 0.8em;
+	transition: all 0.25 ease-in;
+}
+.content input[type="submit"]:hover
+{
+	background-color: #33ff6e;
+}
+.content p
+{
+	background-color: #66bbff;
+	margin: 0 0 1em 0;
+	padding: .5em;
+	width: 80%;
+}
