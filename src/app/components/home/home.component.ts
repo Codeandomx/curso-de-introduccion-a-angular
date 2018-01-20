@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-demo',
-  templateUrl: './demo.component.html',
-  styleUrls: ['./demo.component.css']
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
 })
-export class DemoComponent implements OnInit
+export class HomeComponent implements OnInit
 {
   // creamos un array para almacenar cadenas
   sitiosInteres: any = [];
