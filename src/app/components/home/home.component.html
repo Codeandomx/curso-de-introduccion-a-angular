@@ -1,9 +1,9 @@
 <div class="container title">
 	<div class="col">
-		<p>Agrega un item a la lista</p>
+		<p>{{ formTitle }}</p>
 	</div>
 	<div class="col">
-		<p>Lista de items</p>
+		<p>{{ listTitle }}</p>
 	</div>
 </div>
 <div class="container content">
@@ -11,10 +11,19 @@
 		<form>
 			<input type="text" name="name" placeholder="Ingrese el nombre del sitio">
 			<input type="text" name="url" placeholder="Ingrese la url del sitio">
-			<input type="submit" value="Agregar item">
+			<input type="submit" bind-value="btnText">
 		</form>
 	</div>
 	<div class="col">
-		<p>No tiene ningun item.</p>
+		<div>
+			<p class="red">
+				{{ site.name }}: <br>
+				<small>{{ site.url }}</small>	
+			</p>
+		</div>
+		<p *ngFor="let sitio of sitiosInteres" (click)="setSite(sitio)">
+			{{ sitio.name }}: <br>
+			<small>{{ sitio.url }}</small>
+		</p>
 	</div>
 </div>

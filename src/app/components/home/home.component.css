@@ -7,6 +7,10 @@
 {
 	padding: 0.5em 1em;
 }
+.red
+{
+	background-color: #f73d3d !important;;
+}
 .title
 {
 	background-color: #2277ff;
@@ -43,6 +47,7 @@
 .content p
 {
 	background-color: #66bbff;
+	cursor: pointer;
 	margin: 0 0 1em 0;
 	padding: .5em;
 	width: 80%;
