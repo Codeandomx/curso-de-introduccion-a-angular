@@ -23,6 +23,7 @@ En la rama master encontraras un ejemplo básico de "Hola mundo" y el entorno de
 2. [Mi primera aplicación con Angular y angular CLI](http://blog.codeando.org/articulos/mi-primera-app-con-angular-y-angular-cli.html).
 3. [Arquitectura de componentes en Angular](http://blog.codeando.org/articulos/arquitectura-de-componentes-en-angular.html).
 4. [Crear componentes con Angular](http://blog.codeando.org/articulos/crear-componentes-en-angular.html).
+5. [Plantillas y estilos CSS con Angular](http://blog.codeando.org/articulos/plantillas-y-estilos-css-con-angular.html).
 
 ## Ingresa a la plataforma
 
