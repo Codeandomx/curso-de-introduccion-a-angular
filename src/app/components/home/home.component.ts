@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {FormControl, Validators, NgForm} from '@angular/forms';
+import { SiteModel } from '../../models/SiteModel';
 
 // Decorador
 @Component({
@@ -16,6 +18,7 @@ export class HomeComponent implements OnInit
   listTitle: string;
   btnText: string;
   site: iSite;
+  siteModel = new SiteModel();
 
   constructor() { }
 
@@ -36,6 +39,12 @@ export class HomeComponent implements OnInit
   // Actualizamos el sitio de interes principal
   setSite(site: iSite) {
     this.site = site;
+  }
+
+  // manejador del formulario
+  onSubmit(f: NgForm) {
+    this.sitiosInteres.unshift(this.siteModel.toObject());
+    f.reset();
   }
 }
 
