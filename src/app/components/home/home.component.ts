@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, Validators, NgForm} from '@angular/forms';
 import { SiteModel } from '../../models/SiteModel';
+import { SiteService } from '../../services/site.service';
 
 // Decorador
 @Component({
@@ -20,20 +21,14 @@ export class HomeComponent implements OnInit
   site: iSite;
   siteModel = new SiteModel();
 
-  constructor() { }
+  constructor(private _site: SiteService) { }
 
   // Inicializamos las propiedades
   ngOnInit() {
-    this.sitiosInteres = [
-      { name: 'Blog Codeando', url: 'http://blog.codeando.org' },
-      { name: 'Github', url: 'https://github.com/codeandomx' },
-      { name: 'Twitter', url: 'https://twitter.com/codeando_org' },
-      { name: 'Facebook', url: 'https://facebook.com/codeando.org' }
-    ];
+    this._site.site.subscribe((res) => { this.sitiosInteres = res });
     this.formTitle = "Agrega un item a la lista";
     this.listTitle = "Lista de items";
     this.btnText = "Agregar item";
-    this.site = { name: 'Blog Codeando', url: 'http://blog.codeando.org' };
   }
 
   // Actualizamos el sitio de interes principal
@@ -45,6 +40,7 @@ export class HomeComponent implements OnInit
   onSubmit(f: NgForm) {
     this.sitiosInteres.unshift(this.siteModel.toObject());
     f.reset();
+    this._site.changeSites(this.sitiosInteres);
   }
 }
 
