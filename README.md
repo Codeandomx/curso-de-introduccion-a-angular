@@ -18,6 +18,7 @@ En la rama master encontraras un ejemplo básico de "Hola mundo" y el entorno de
 3. [Arquitectura de componentes en Angular](http://blog.codeando.org/articulos/arquitectura-de-componentes-en-angular.html).
 4. [Crear componentes con Angular](http://blog.codeando.org/articulos/crear-componentes-en-angular.html).
 5. [Plantillas y estilos CSS con Angular](http://blog.codeando.org/articulos/plantillas-y-estilos-css-con-angular.html).
+6. [interpolacion, property y event binding con Angular](http://blog.codeando.org/articulos/interpolacion-property-y-event-binding-con-angular.html)
 
 ## Ingresa a la plataforma
 
