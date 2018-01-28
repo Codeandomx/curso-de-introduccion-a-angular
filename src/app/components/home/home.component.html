@@ -15,7 +15,7 @@
 		</form>
 	</div>
 	<div class="col">
-		<div>
+		<div [hidden]="!site">
 			<p class="red">
 				{{ site.name }}: <br>
 				<small>{{ site.url }}</small>	
