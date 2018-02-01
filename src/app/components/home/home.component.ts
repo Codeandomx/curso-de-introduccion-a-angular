@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl, Validators, NgForm} from '@angular/forms';
+import { FormControl, Validators, NgForm } from '@angular/forms';
 import { SiteModel } from '../../models/SiteModel';
 import { SiteService } from '../../services/site.service';
 

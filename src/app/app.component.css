@@ -1,4 +1,31 @@
-h1
+nav
 {
 	color: #fcfcfc;
+	margin: 0;
+}
+nav ul
+{
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	padding: 1em 0;
+}
+nav ul li
+{
+	flex-direction: row;
+	margin-right: 1em;
+}
+nav ul li a
+{
+	background-color: #5700FF;
+	border-radius: 3px;
+	color: #fcfcfc;
+	font-weight: bold;
+	padding: 10px 15px;
+	transition: all 0.25s ease-in;
+}
+nav ul li a:hover
+{
+	background-color: #4600ee;
+	cursor: pointer;
 }

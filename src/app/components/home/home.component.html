@@ -17,8 +17,8 @@
 	<div class="col">
 		<div [hidden]="!site">
 			<p class="red">
-				{{ site.name }}: <br>
-				<small>{{ site.url }}</small>	
+				{{ site?.name }}: <br>
+				<small>{{ site?.url }}</small>	
 			</p>
 		</div>
 		<p *ngFor="let sitio of sitiosInteres" (click)="setSite(sitio)">
