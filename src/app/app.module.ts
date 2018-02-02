@@ -7,6 +7,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SiteService } from './services/site.service';
 
+import { AngularFireModule } from 'angularfire2';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { environment } from 'environments/environment';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -15,6 +19,9 @@ import { SiteService } from './services/site.service';
     BrowserModule,
     FormsModule,
     HttpModule,
+    AngularFireModule,
+    AngularFirestoreModule,
+    AngularFireModule.initializeApp(environment.firebase, 'Demo'),
     AppRoutingModule
   ],
   providers: [SiteService],

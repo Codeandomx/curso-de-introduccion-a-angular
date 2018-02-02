@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit
 
   // Inicializamos las propiedades
   ngOnInit() {
-    this._site.site.subscribe((res) => { this.sitiosInteres = res });
+    this._site.getSites().subscribe((res) => { this.sitiosInteres = res });
     this.formTitle = "Agrega un item a la lista";
     this.listTitle = "Lista de items";
     this.btnText = "Agregar item";
@@ -40,7 +40,7 @@ export class HomeComponent implements OnInit
   onSubmit(f: NgForm) {
     this.sitiosInteres.unshift(this.siteModel.toObject());
     f.reset();
-    this._site.changeSites(this.sitiosInteres);
+    this._site.setSite(this.sitiosInteres[0]);
   }
 }
 

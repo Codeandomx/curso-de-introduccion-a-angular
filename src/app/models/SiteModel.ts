@@ -1,7 +1,8 @@
 export class SiteModel
 {
-	name : string;
-	url : string;
+	id? : string;
+	name? : string;
+	url? : string;
 
 	// Metodos getter
 	getName() {
