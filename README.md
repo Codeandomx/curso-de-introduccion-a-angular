@@ -27,6 +27,13 @@ En la rama master encontraras un ejemplo básico de "Hola mundo" y el entorno de
 6. [interpolacion, property y event binding con Angular](http://blog.codeando.org/articulos/interpolacion-property-y-event-binding-con-angular.html)
 7. [Uso de formularios con Angular](http://blog.codeando.org/articulos/formularios-con-angular.html).
 8. [Servicios con Angular](http://blog.codeando.org/articulos/servicios-con-angular.html).
+9. [Mostrar y ocultar elementos con Angular](http://blog.codeando.org/articulos/mostrar-y-ocultar-elementos-en-angular.html).
+
+## Otros temas de interés
+
+1. [Actualizar Angular CLI y crear proyecto en Angular 5](http://blog.codeando.org/articulos/actualizar-angular-cli-y-crear-proyecto-para-angular-5.html).
+2. [Actualizar de Angular 4 a Angular 5](http://blog.codeando.org/articulos/actualizar-de-angular-4-a-angular-5.html).
+3. [Iconos para Angular con font awesome](http://blog.codeando.org/articulos/iconos-para-angular-con-font-awesome.html).
 
 ## Ingresa a la plataforma
 
